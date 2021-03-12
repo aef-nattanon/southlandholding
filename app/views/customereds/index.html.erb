@@ -1,0 +1,33 @@
+<p id="notice"><%= notice %></p>
+
+<h1>Customereds</h1>
+
+<table>
+  <thead>
+    <tr>
+      <th>Id card</th>
+      <th>First name</th>
+      <th>Last name</th>
+      <th>Parent</th>
+      <th colspan="3"></th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <% @customereds.each do |customered| %>
+      <tr>
+        <td><%= customered.id_card %></td>
+        <td><%= customered.first_name %></td>
+        <td><%= customered.last_name %></td>
+        <td><%= customered.parent_id %></td>
+        <td><%= link_to 'Show', customered %></td>
+        <td><%= link_to 'Edit', edit_customered_path(customered) %></td>
+        <td><%= link_to 'Destroy', customered, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>
+
+<br>
+
+<%= link_to 'New Customered', new_customered_path %>

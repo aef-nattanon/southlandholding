@@ -1,0 +1,24 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Id card:</strong>
+  <%= @customered.id_card %>
+</p>
+
+<p>
+  <strong>First name:</strong>
+  <%= @customered.first_name %>
+</p>
+
+<p>
+  <strong>Last name:</strong>
+  <%= @customered.last_name %>
+</p>
+
+<p>
+  <strong>Parent:</strong>
+  <%= @customered.parent_id %>
+</p>
+
+<%= link_to 'Edit', edit_customered_path(@customered) %> |
+<%= link_to 'Back', customereds_path %>

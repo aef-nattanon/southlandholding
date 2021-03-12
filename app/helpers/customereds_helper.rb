@@ -1,0 +1,2 @@
+module CustomeredsHelper
+end
